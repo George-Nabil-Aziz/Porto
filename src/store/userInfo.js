@@ -113,15 +113,15 @@ export const userInfoStore = defineStore('userID', {
       // Need Edit
       axios
         .post('https://dummyjson.com/carts/add', {
-          userId: this.id,
+          userId: 1,
           products: [
             {
-              id: this.singleProductID,
-              quantity: this.singleProductQuantity
+              id: 1,
+              quantity: 1
             },
             {
               id: 50,
-              quantity: this.singleProductQuantity
+              quantity: 2
             }
           ]
         })
